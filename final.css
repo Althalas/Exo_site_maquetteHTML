@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#img-entete {
+    height: 100vh;
+    background-image: url(caviar.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#encart-entete {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    font-size: 22px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 50px 100px;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.border-right {
+    border-right: 1px solid black;
+}
+
+.btn {
+    color: #FFF;
+    border: 1px solid #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: Montserrat;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*height: 130px;*/
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+nav>ul {
+    display: flex;
+    color: #FFF;
+    gap: 30px;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+
+nav>ul>li {
+    list-style-type: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    padding-bottom: 7px;
+    position: relative;
+}
+
+nav>ul>li:hover {
+    border-bottom: 2px solid #FFF;
+}
+
+.sous-menu {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    display: none;
+}
+
+nav>ul>li:hover>.sous-menu {
+    display: block;
+}
+
+nav li {
+    cursor: pointer;
+}
+
+.sous-menu>li {
+    background-color: white;
+    color: rgb(16, 6, 159);
+    text-transform: uppercase;
+    padding: 10px 10px 10px 20px;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+
+.sous-menu>li:hover {
+    background-color: #b0b0b0;
+}
+
+.btn-eshop {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    display: flex;
+    padding-left: 60px;
+}
